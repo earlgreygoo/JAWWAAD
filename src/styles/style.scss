@@ -21,23 +21,19 @@ body {
 	height: 100%;
 	background: url("../images/face.svg") no-repeat 50% 50% fixed;
 	background-color: yellow;
-	background-size: 45%;
+	background-size: 30%;
 
-	@media (min-width : 500px) {
-  		background-color: red;
+	@media (max-width : 500px) {
+  		background-size: 50%;
  	}
 
 }
 
-.home {
-	
-}
 
 ul {
 	width: 100%;
 	height: 4rem; 
 	padding: 1rem;
-	position: fixed; 
 	border-bottom: 2px solid black;
 
     	li {
@@ -72,9 +68,15 @@ ul {
     }
 }
 
-    	
+  .bio{
+    background: rgba(50,50,50,.7);
+    color: white;
+    height: 24rem;
+    overflow: auto;
+    margin: 2rem;
+    padding: 2rem;
+  }  	
 
 
 }
 
-}
