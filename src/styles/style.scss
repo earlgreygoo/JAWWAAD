@@ -22,6 +22,59 @@ body {
 	background: url("../images/face.svg") no-repeat 50% 50% fixed;
 	background-color: yellow;
 	background-size: 30%;
+    animation: faceHover 10s infinite; 
+
+    @keyframes faceHover {
+        0% {
+            background-position: center;
+        }
+        14% {
+        	background-position: 50% 50%;
+        }
+
+        14.1% {
+        	background-position: 20% 50%;
+        }
+
+        14.2%{
+        	background-position: center;
+
+        }
+
+        29.9% {
+       		background-repeat: no-repeat;
+       	}
+
+        30% {
+        	background-repeat: repeat;
+        }
+
+       	30.5% {
+       		background-repeat: no-repeat;
+       	}
+
+        50% {
+            background-position: 50% 46%;
+        }
+
+        54.9% {
+        	background-color: yellow;
+        	background-position: 50% 46%;
+        }
+        55% {
+        	background-color: white;
+        	background-position: 1150% -20%;
+        }
+        55.1% {
+        	background-color: yellow;
+        	background-position: center;
+        }
+
+        100% {
+            background-position: center;
+        }
+        
+    }
 
 	@media (max-width : 500px) {
   		background-size: 50%;
@@ -29,7 +82,7 @@ body {
 
 }
 
-
+   
 ul {
 	width: 100%;
 	height: 4rem; 
@@ -68,15 +121,15 @@ ul {
     }
 }
 
-  .bio{
-    background: rgba(50,50,50,.7);
+}
+
+
+ .bio {
+    background: rgba(50,50,50,.9);
     color: white;
     height: 24rem;
     overflow: auto;
     margin: 2rem;
     padding: 2rem;
-  }  	
-
-
-}
+  }  
 
